@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boti - Soluções de RPA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="flex-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="/" class="logo">
+          <div class="logo-circle"></div>
+          <span class="logo-text">Boti</span>
+        </a>
+        <nav class="desktop-nav">
+          <a href="#services" class="nav-link">Serviços</a>
+          <a href="#" class="nav-link">Soluções</a>
+          <a href="#" class="nav-link">Casos de Sucesso</a>
+          <a href="#" class="nav-link">Sobre</a>
+          <a href="#contact" class="button button-black">Contato</a>
+        </nav>
+        <button id="menu-toggle" class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="#services" class="mobile-nav-link">Serviços</a>
+        <a href="#" class="mobile-nav-link">Soluções</a>
+        <a href="#" class="mobile-nav-link">Casos de Sucesso</a>
+        <a href="#" class="mobile-nav-link">Sobre</a>
+        <a href="#contact" class="button button-black full-width">Contato</a>
+      </div>
+    </div>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">Automatize. Otimize. Transforme.</h1>
+                <p class="hero-description">
+                  Desenvolvemos soluções inteligentes de RPA que otimizam seus processos de negócios, reduzem custos
+                  operacionais e impulsionam a transformação digital.
+                </p>
+              </div>
+              <div class="button-group">
+                <a href="#contact" class="button button-white">
+                  Começar
+                  <i class="fas fa-arrow-right button-icon"></i>
+                </a>
+                <a href="#services" class="button button-outline-white button-black-bg">
+                  Explorar Soluções
+                </a>
+              </div>
+            </div>
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img src="https://placehold.co/500x500" alt="Visualização de Tecnologia RPA" class="responsive-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">85%</div>
+              <div class="stat-label">Redução de Custos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">99.9%</div>
+              <div class="stat-label">Precisão</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Operação</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Clientes</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Nossos Serviços</div>
+            <h2 class="section-title">Soluções de Automação Inteligente</h2>
+            <p class="section-description">
+              Entregamos soluções RPA completas adaptadas às suas necessidades específicas de negócio.
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-robot service-icon"></i>
+                <h3 class="card-title">Automação de Processos</h3>
+                <p class="card-description">
+                  Automatize tarefas repetitivas e fluxos de trabalho para aumentar a eficiência e reduzir erros.
+                </p>
+              </div>
+              <div class="card-content">
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Entrada e extração de dados
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Processamento de documentos
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Geração de relatórios
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-brain service-icon"></i>
+                <h3 class="card-title">RPA Inteligente</h3>
+                <p class="card-description">
+                  Combine RPA com IA e aprendizado de máquina para capacidades avançadas de tomada de decisão.
+                </p>
+              </div>
+              <div class="card-content">
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Processamento de linguagem natural
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Visão computacional
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Análise preditiva
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-database service-icon"></i>
+                <h3 class="card-title">Integração Empresarial</h3>
+                <p class="card-description">
+                  Integre perfeitamente o RPA com seus sistemas e aplicações existentes.
+                </p>
+              </div>
+              <div class="card-content">
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Desenvolvimento de API
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Integração com sistemas legados
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    Migração para a nuvem
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="process">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge badge-gray">Nosso Processo</div>
+            <h2 class="section-title">Como Implementamos RPA</h2>
+            <p class="section-description">
+              Nossa metodologia comprovada garante uma implementação e adoção bem-sucedida de RPA.
+            </p>
+          </div>
+          <div class="process-grid">
+            <div class="process-item">
+              <div class="process-number">1</div>
+              <h3 class="process-title">Avaliação</h3>
+              <p class="process-description">
+                Analisamos seus processos para identificar oportunidades de automação.
+              </p>
+            </div>
+            <div class="process-item">
+              <div class="process-number">2</div>
+              <h3 class="process-title">Design</h3>
+              <p class="process-description">
+                Projetamos soluções RPA personalizadas para suas necessidades específicas.
+              </p>
+            </div>
+            <div class="process-item">
+              <div class="process-number">3</div>
+              <h3 class="process-title">Desenvolvimento</h3>
+              <p class="process-description">
+                Construímos e testamos sua solução RPA para garantir desempenho ideal.
+              </p>
+            </div>
+            <div class="process-item">
+              <div class="process-number">4</div>
+              <h3 class="process-title">Implantação</h3>
+              <p class="process-description">
+                Implementamos, monitoramos e melhoramos continuamente sua solução RPA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits-grid">
+            <div class="benefits-image-container">
+              <div class="benefits-image">
+                <img src="https://placehold.co/500x500" alt="Visualização dos Benefícios do RPA" class="responsive-image">
+              </div>
+            </div>
+            <div class="benefits-content">
+              <div class="benefits-header">
+                <div class="badge">Benefícios</div>
+                <h2 class="section-title">Por Que Escolher Nossas Soluções RPA</h2>
+                <p class="section-description">
+                  Nossas soluções RPA entregam valor tangível para o negócio e vantagem competitiva.
+                </p>
+              </div>
+              <ul class="benefits-list">
+                <li class="benefit-item">
+                  <i class="fas fa-microchip benefit-icon"></i>
+                  <div class="benefit-text">
+                    <h3 class="benefit-title">Aumento de Eficiência</h3>
+                    <p class="benefit-description">Redução do tempo de processo em até 90%</p>
+                  </div>
+                </li>
+                <li class="benefit-item">
+                  <i class="fas fa-chart-line benefit-icon"></i>
+                  <div class="benefit-text">
+                    <h3 class="benefit-title">Redução de Custos</h3>
+                    <p class="benefit-description">Diminuição de custos operacionais em 25-50%</p>
+                  </div>
+                </li>
+                <li class="benefit-item">
+                  <i class="fas fa-code benefit-icon"></i>
+                  <div class="benefit-text">
+                    <h3 class="benefit-title">Escalabilidade</h3>
+                    <p class="benefit-description">Escale facilmente a automação conforme seu negócio cresce</p>
+                  </div>
+                </li>
+                <li class="benefit-item">
+                  <i class="fas fa-robot benefit-icon"></i>
+                  <div class="benefit-text">
+                    <h3 class="benefit-title">Maior Precisão</h3>
+                    <p class="benefit-description">Elimine erros humanos em tarefas repetitivas</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge badge-gray">Depoimentos</div>
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <p class="section-description">
+              Ouça empresas que transformaram suas operações com nossas soluções RPA.
+            </p>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "A implementação do RPA transformou nosso departamento financeiro. O que costumava levar dias
+                  agora leva horas, permitindo que nossa equipe se concentre em iniciativas estratégicas em vez de
+                  tarefas repetitivas."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"></div>
+                  <div class="author-info">
+                    <p class="author-name">Sarah Johnson</p>
+                    <p class="author-title">CFO, Global Enterprises</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  "O retorno sobre o investimento em RPA foi evidente já no primeiro trimestre. A solução se pagou e
+                  continua entregando valor em toda a nossa organização."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"></div>
+                  <div class="author-info">
+                    <p class="author-name">Michael Chen</p>
+                    <p class="author-title">CTO, Tech Innovations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-header">
+              <h2 class="contact-title">Pronto para Transformar seu Negócio?</h2>
+              <p class="contact-description">
+                Entre em contato hoje para agendar uma consulta e descobrir como nossas soluções RPA podem impulsionar
+                sua transformação digital.
+              </p>
+            </div>
+            <div class="contact-form-container">
+              <form class="contact-form">
+                <input type="text" placeholder="Seu Nome" class="form-input" required>
+                <input type="email" placeholder="Seu Email" class="form-input" required>
+                <textarea placeholder="Sua Mensagem" class="form-textarea" required></textarea>
+                <button type="submit" class="button button-white">
+                  Começar
+                  <i class="fas fa-arrow-right button-icon"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-company">
+            <a href="/" class="logo">
+              <div class="logo-circle"></div>
+              <span class="logo-text">Boti</span>
+            </a>
+            <p class="company-description">Transformando empresas através de soluções inteligentes de automação.</p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">Soluções</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Automação de Processos</a></li>
+              <li><a href="#" class="footer-link">RPA Inteligente</a></li>
+              <li><a href="#" class="footer-link">Integração Empresarial</a></li>
+              <li><a href="#" class="footer-link">Desenvolvimento Personalizado</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">Empresa</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Sobre Nós</a></li>
+              <li><a href="#" class="footer-link">Carreiras</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">Legal</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+              <li><a href="#" class="footer-link">Termos de Serviço</a></li>
+              <li><a href="#" class="footer-link">Política de Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; <span id="current-year"></span> Boti. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
