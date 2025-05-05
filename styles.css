@@ -6,24 +6,25 @@
 }
 
 :root {
-  --color-black: #000;
-  --color-white: #fff;
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  --color-black: #192A56;
+  --color-white: #FFFFFF;
+  --color-gray-50: #f0f4fa;
+  --color-gray-100: #dbe6f3;
+  --color-gray-200: #c6d9ec;
+  --color-gray-300: #b0cce5;
+  --color-gray-400: #9abfdd;
+  --color-gray-500: #84b2d6;
+  --color-gray-600: #6fa5cf;
+  --color-gray-700: #5998c8;
+  --color-gray-800: #448bc1;
+  --color-gray-900: #3498DB;
 }
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  color: var(--color-gray-900);
+  color: var(--color-black);
 }
 
 .sr-only {
@@ -151,7 +152,7 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url('img2.png');
+  background-image: url('Logo.jpeg');
   background-size: cover;
   background-position: center;
 }
@@ -463,7 +464,7 @@ a {
 
 .section-description {
   max-width: 900px;
-  color: var(--color-gray-500);
+  color: var(--color-black);
 }
 
 @media (min-width: 768px) {
@@ -528,7 +529,7 @@ a {
 }
 
 .card-description {
-  color: var(--color-gray-500);
+  color: var(--color-gray-900);
   font-size: 0.875rem;
 }
 
