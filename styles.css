@@ -46,6 +46,68 @@ body {
   padding: 0 1rem; /* espaço lateral para mobile */
 }
 
+.container-benefits {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Lateral padding for mobile */
+  position: relative; /* Required for pseudo-element */
+  background-image: url('benefits.png'); /* Background image */
+  background-size: cover; /* Scales image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  min-height: 100vh; /* Ensures the container is at least viewport height */
+}
+
+/* Transparent overlay with pseudo-element */
+.container-benefits::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  z-index: 1; /* Places overlay above background but below content */
+}
+
+/* Ensure content stays above the overlay */
+.container-benefits > * {
+  position: relative;
+  z-index: 2; /* Content above overlay */
+}
+
+.container-solucoes {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Lateral padding for mobile */
+  position: relative; /* Required for pseudo-element */
+  background-image: url('solucoes.png'); /* Background image */
+  background-size: cover; /* Scales image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  min-height: 100vh; /* Ensures the container is at least viewport height */
+}
+
+/* Transparent overlay with pseudo-element */
+.container-solucoes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  z-index: 1; /* Places overlay above background but below content */
+}
+
+/* Ensure content stays above the overlay */
+.container-solucoes > * {
+  position: relative;
+  z-index: 2; /* Content above overlay */
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -230,8 +292,46 @@ a {
   padding: 3rem 0;
   background-color: var(--color-black);
   color: var(--color-white);
+  position: relative;
+  background-image: url('Fundo.png');
+  background-size: cover; /* Ajustado para animação */
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: backgroundZoom 10s ease-in-out infinite; /* Animação aplicada */
 }
 
+/* Camada de transparência com pseudo-elemento */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Garante que o conteúdo fique acima da camada de transparência */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Definição da animação de zoom */
+@keyframes backgroundZoom {
+  0% {
+    background-size: 100%; /* Tamanho inicial */
+  }
+  50% {
+    background-size: 110%; /* Zoom máximo */
+  }
+  100% {
+    background-size: 100%; /* Volta ao inicial */
+  }
+}
+
+/* Media Queries existentes */
 @media (min-width: 768px) {
   .hero {
     padding: 6rem 0;
@@ -359,7 +459,7 @@ a {
 .stats {
   width: 100%;
   padding: 3rem 0;
-  background-color: var(--color-gray-50);
+  background-color: #F2F2F2;
 }
 
 
@@ -406,6 +506,7 @@ a {
 .stat-number {
   font-size: 1.875rem;
   font-weight: 700;
+  color: #4A4A4A;
 }
 
 @media (min-width: 768px) {
@@ -436,6 +537,7 @@ a {
   gap: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: #FFFFFF;
 }
 
 .badge {
@@ -447,13 +549,14 @@ a {
 }
 
 .badge-gray {
-  background-color: var(--color-gray-200);
+  background-color:#FFFFFF;;
 }
 
 .section-title {
   font-size: 1.875rem;
   font-weight: 700;
   letter-spacing: -0.025em;
+  color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -464,7 +567,7 @@ a {
 
 .section-description {
   max-width: 900px;
-  color: var(--color-black);
+  color: #FFFFFF;;
 }
 
 @media (min-width: 768px) {
@@ -477,6 +580,30 @@ a {
 .services {
   width: 100%;
   padding: 3rem 0;
+  position: relative; /* Required for pseudo-element */
+  background-image: url('Cover.png'); /* Background image */
+  background-size: cover; /* Adjusts image to cover section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  animation: backgroundZoom 10s ease-in-out infinite; /* Animation */
+}
+
+/* Transparent overlay with pseudo-element */
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.84); /* 50% opacity black overlay */
+  z-index: 1; /* Places overlay above background but below content */
+}
+
+/* Ensure content stays above the overlay */
+.services > * {
+  position: relative;
+  z-index: 2; /* Content above overlay */
 }
 
 @media (min-width: 768px) {
@@ -488,6 +615,19 @@ a {
 @media (min-width: 1024px) {
   .services {
     padding: 8rem 0;
+  }
+}
+
+/* Animation for background zoom */
+@keyframes backgroundZoom {
+  0% {
+    background-size: 100%; /* Initial size */
+  }
+  50% {
+    background-size: 110%; /* Maximum zoom */
+  }
+  100% {
+    background-size: 100%; /* Back to initial */
   }
 }
 
@@ -509,6 +649,7 @@ a {
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  background-color: var(--color-white); /* Ensure cards are opaque */
 }
 
 .card-header {
@@ -561,7 +702,7 @@ a {
 .process {
   width: 100%;
   padding: 3rem 0;
-  background-color: var(--color-gray-50);
+  background-color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -630,6 +771,31 @@ a {
 .benefits {
   width: 100%;
   padding: 3rem 0;
+  color: #000000;
+  position: relative; /* Required for pseudo-element */
+  background-image: url('benefits.png'); /* Background image */
+  background-size: cover; /* Scales image to cover the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  min-height: 100vh; /* Ensures the section is at least viewport height */
+}
+
+/* Transparent overlay with pseudo-element */
+.benefits::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  z-index: 1; /* Places overlay above background but below content */
+}
+
+/* Ensure content stays above the overlay */
+.benefits > * {
+  position: relative;
+  z-index: 2; /* Content above overlay */
 }
 
 @media (min-width: 768px) {
@@ -642,6 +808,14 @@ a {
   .benefits {
     padding: 8rem 0;
   }
+}
+
+/* Container for benefits content */
+.container-benefits {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Lateral padding for mobile */
 }
 
 .benefits-grid {
@@ -672,6 +846,35 @@ a {
   position: relative;
   height: 300px;
   width: 300px;
+  background-image: url('globo.png'); /* Background image */
+  background-size: contain; /* Ensures the entire image fits without cropping */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  animation: rotate360 10s linear infinite; /* 360-degree rotation */
+}
+
+/* Rotation animation */
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .benefits-image {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-image {
+    height: 500px;
+    width: 500px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -730,11 +933,21 @@ a {
 .benefit-title {
   font-weight: 700;
   margin-bottom: 0.25rem;
+  color: var(--color-white); /* White for contrast */
 }
 
 .benefit-description {
   font-size: 0.875rem;
-  color: var(--color-gray-500);
+  color: var(--color-gray-200); /* Lighter gray for legibility */
+}
+
+.section-description {
+  color: var(--color-gray-200); /* Lighter gray for header description */
+}
+
+.badge {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly opaque badge */
+  color: var(--color-white);
 }
 
 /* Testimonials Section */
@@ -988,7 +1201,7 @@ a {
 
 .image-grid-section {
   padding: 4rem 0;
-  background-color: var(--color-gray-50);
+  background-color: #010510;
 }
 
 .section-title {
@@ -1023,24 +1236,18 @@ a {
   transform: scale(1.05);
 }
 
-/* Container se ainda não tiver */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
 /* Projects Section */
 .projects {
   padding: 4rem 2rem;
-  background-color: var(--color-gray-50);
+  background-color: #000000;
   text-align: center;
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: var(--color-primary);
+  color: var(--color-gray-50);
 }
 
 .projects-grid {
@@ -1164,5 +1371,65 @@ a {
   }
 }
 
+/* Contact Info Section */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  max-width: 600px; /* Limits width for readability */
+  margin: 0 auto; /* Centers the content */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--color-white); /* White for contrast */
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-gray-200); /* Lighter gray for legibility */
+}
+
+.contact-item strong {
+  color: var(--color-white); /* White for emphasis */
+  font-weight: 600;
+}
+
+.contact-item a {
+  color: var(--color-gray-200);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    padding: 3rem 0;
+  }
+
+  .contact-item {
+    gap: 1.5rem;
+  }
+
+  .contact-icon {
+    font-size: 1.75rem;
+  }
+
+  .contact-item p {
+    font-size: 1.125rem;
+  }
+}
 
 
